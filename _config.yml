@@ -118,7 +118,7 @@ author:
       url: mailto:hjhng125@nate.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: {{ site.url }}
+      url: "https://hjhng125.github.io"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://facebook.com/"
