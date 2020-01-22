@@ -37,11 +37,13 @@ last_modified_at: 2020-01-22T021:48:00
 * text file, HTML file, word file, image, media
 * 처음 참조가 한번 이루어지고 리소스의 변경을 관리 하지 않는다.
 ```
+
 **Dynamic resource**: 
 ```
 * 요청된 정보, 사용자 정보에 따라 다른 콘텐츠
 * 런타임시에 결정되거나 변경될 수 있으며 리소스가 참조될 때마다 리소스를 다시 읽어오기 때문에 StaticResource에 비해 약간의 성능 저하가 발생할 수 있다.
 ```
+
 **MIME TYPE**
 ```
 * Multipurpose Internet Mail Extensions
