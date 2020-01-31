@@ -17,7 +17,6 @@ Javascript ES6 문에서는 export, import 로 모듈을 손쉽게 제작하고 
 
 # export
 * export 에는 named 와 default 가 있다.
-
 * export named: 모듈을 특정 이름으로 export 한다.
 
 ```
