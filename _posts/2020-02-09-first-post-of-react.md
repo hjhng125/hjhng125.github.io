@@ -1,15 +1,15 @@
 ---
-  title:  "[React] React란 무엇인가"
-  excerpt: "First story of React."
+title:  "[React] React란 무엇인가"
+excerpt: "First story of React."
 
-  categories:
-  - React
-  tags:
-  - React
+categories:
+- React
+tags:
+- React
 
-  last_modified_at: 2020-02-09T020:51:00
+last_modified_at: 2020-02-09T020:51:00
 
-  ---
+---
 
   # 프론트 프레임워크/라이브러리
   리액트는 정말 인기있는 프론트엔드 라이브러리이다. 
