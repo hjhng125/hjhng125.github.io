@@ -10,7 +10,7 @@ tags:
   - QuerySet
 last_modified_at: 2020-03-14T023:43:00
 ---
-# Django - QuerySet
+
 > Query란 데이터베이스에 정보를 요청해주는 것을 의미하며 Python으로 작성한 코드가 SQL로 매핑되어 QuerySet이라는 자료 형태로 값이 넘어온다.
 > 이는 Iterable한 객체로써 이를 이용해 1개 이상의 데이터를 불러와 사용할 수 있다.
 > QuerySet은 Lazy한 특성을 갖고 있는데, 이를 이해하여 DB access 최적화해야한다.
@@ -120,4 +120,4 @@ User.objects.all().order_by('-id')
 
 ```
 
-두가지 방식을 모두 사용하면 QuerySet의 order_by 지정을 따른다.
+두가지 방식을 모두 사용하면 QuerySet의 `order_by`지정을 따른다.
