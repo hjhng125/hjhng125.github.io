@@ -6,7 +6,6 @@ categories:
   - Java
 tags:
   - access modifier
-  - constructor
 last_modified_at: 2020-07-16T0018:51:00
 ---
 
