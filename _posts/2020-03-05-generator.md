@@ -25,12 +25,14 @@ last_modified_at: 2020-03-05T020:42:00
 * 코루틴은 제네레이터를 소비하는 코드에서 send 함수를 사용하여 역으로 제네레이터 함수의 각 yield 표현식에 값을 보낼 수 있게 하는 방법으로 동작
 * 제네레이터가 첫 번째 yield 표현식으로 전진하여 첫 번째 send 의 값을 받을 수 있게 하려면, 먼저 next() 를 호출해야 한다.
 * yield 와 send 의 조합은 제네레이터가 외부 입력에 반응하여 다음에 다른 값을 얻게 하는 표준 방법이다.
-
+* line = (yield) 는 값을 넘겨받아 line 변수에 할당하는 것
+* yield value 는 value값을 호출한 함수에 돌려주며 현재 상태를 기억
 ```
 def function():
   while True:
     line = (yield)
     print(line)
 ans = function()
+ans.next()
 ans.send('hello world')
 ```
