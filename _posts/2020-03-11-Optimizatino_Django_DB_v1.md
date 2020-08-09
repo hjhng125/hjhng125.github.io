@@ -9,7 +9,7 @@ tags:
   - QuerySet 
   - ORM
   - 최적화
-last_modified_at: 2020-03-07T021:13:00
+last_modified_at: 2020-03-07
 ---
 
 Django에서 DB를 최적화하는 것은 성능면에서 상당한 장점을 갖지만 코드의 가독성을 흐리게 되는 trade off가 존재한다.

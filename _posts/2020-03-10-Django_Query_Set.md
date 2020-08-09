@@ -8,7 +8,7 @@ tags:
   - Django
   - ORM
   - QuerySet
-last_modified_at: 2020-03-14T023:43:00
+last_modified_at: 2020-03-14
 ---
 
 * Query란 데이터베이스에 정보를 요청해주는 것을 의미하며 Python으로 작성한 코드가 SQL로 매핑되어 QuerySet이라는 자료 형태로 값이 넘어온다.

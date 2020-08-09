@@ -6,7 +6,7 @@ categories:
   - Java
 tags:
   - access modifier
-last_modified_at: 2020-07-16T0018:51:00
+last_modified_at: 2020-07-16
 ---
 
 * Java에는 `private 기본 생성자`와 `정적 메소드` 혹은 `정적 필드`로 구성된 클래스가 존재한다. 

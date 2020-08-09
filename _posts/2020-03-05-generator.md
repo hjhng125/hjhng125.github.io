@@ -7,7 +7,7 @@ categories:
 tags:
   - Python
   - Coroutine
-last_modified_at: 2020-03-05T020:42:00
+last_modified_at: 2020-03-05
 ---
 
 # Generator

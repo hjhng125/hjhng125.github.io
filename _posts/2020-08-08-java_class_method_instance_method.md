@@ -6,8 +6,9 @@ categories:
   - Java
 tags:
   - static
+  - OOP
 
-last_modified_at: 2020-08-08T0023:51:00
+last_modified_at: 2020-08-08
 ---
 
 * 변수에서와 같이, 메서드 앞에 static이 붙으면 클래스 메서드, 그렇지 않은 것은 인스턴스 메서드이다. 

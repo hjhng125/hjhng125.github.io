@@ -7,7 +7,7 @@ categories:
 tags:
   - HTTP
   - URL
-last_modified_at: 2020-01-22T021:48:00
+last_modified_at: 2020-01-22
 ---
 
 # 1장 HTTP 개관

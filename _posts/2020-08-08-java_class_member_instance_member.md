@@ -6,9 +6,10 @@ categories:
   - Java
 tags:
   - class member
-  - instance membber
+  - instance member
+  - OOP
 
-last_modified_at: 2020-08-09T0000:10:00
+last_modified_at: 2020-08-09
 ---
 
 * 같은 클래스에 속한 멤버들 간에는 별도의 인스턴스를 생성하지 않고도 서로 참조, 호출이 가능하다.

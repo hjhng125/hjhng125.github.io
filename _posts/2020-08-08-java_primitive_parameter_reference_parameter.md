@@ -7,7 +7,7 @@ categories:
 tags:
   - Parameter
 
-last_modified_at: 2020-08-08T0018:51:00
+last_modified_at: 2020-08-08
 ---
 
 > 자바에서는 메서드를 호출할 때 매개변수로 지정한 값을 메서드의 매개변수에 복사해서 넘겨준다. 

@@ -8,7 +8,7 @@ tags:
   - MySQL
   - Regular Expression
   - DATABASE
-last_modified_at: 2020-01-22T09:48:00
+last_modified_at: 2020-01-22
 ---
 
 MySQL은 데이터의 특정 패턴을 검색하기 위하여 다음과 같은 패턴 매칭 연산자를 제공한다.

@@ -8,7 +8,7 @@ tags:
   - test
   - JUnit
   - Unit Tests
-last_modified_at: 2020-07-18T0018:51:00
+last_modified_at: 2020-07-18
 ---
 
 ## JUnit

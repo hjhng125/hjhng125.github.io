@@ -9,7 +9,7 @@ tags:
   - QuerySet 
   - ORM
   - 최적화
-last_modified_at: 2020-03-07T021:13:00
+last_modified_at: 2020-03-07
 ---
 
 지난 포스트에 이은 Django DB 최적화 2편입니다.

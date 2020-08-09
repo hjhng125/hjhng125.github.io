@@ -8,7 +8,7 @@ tags:
   - Javascript
   - export
   - import
-last_modified_at: 2020-01-31T017:32:00
+last_modified_at: 2020-01-31
 ---
 
 Javascript ES6 문에서는 export, import 로 모듈을 손쉽게 제작하고 가져다 쓸 수 있다.

@@ -7,7 +7,7 @@ categories:
 tags:
   - maven
   - gradld
-last_modified_at: 2020-07-11T0022:10:00
+last_modified_at: 2020-07-11
 ---
 
 > 의존성 관리 도구

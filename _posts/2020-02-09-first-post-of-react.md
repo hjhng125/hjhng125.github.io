@@ -7,7 +7,7 @@ categories:
 tags:
 - React
 
-last_modified_at: 2020-02-09T020:51:00
+last_modified_at: 2020-02-09
 
 ---
 

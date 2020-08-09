@@ -6,7 +6,7 @@ categories:
   - Python
 tags:
   - Decorator
-last_modified_at: 2020-03-07T021:13:00
+last_modified_at: 2020-03-07
 ---
 
 * 데코레이터는 이미 만들어져 있는 기존의 코드를 수정하지 않고, Wrapper 함수를 이용하여 여러가지 기능을 추가할 수 있게 해준다.
