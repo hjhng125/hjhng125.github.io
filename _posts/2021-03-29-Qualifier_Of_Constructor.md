@@ -30,3 +30,5 @@ lombok.copyableAnnotations += org.springframework.beans.factory.annotation.Quali
 ```
 
 [@Qualifier for @RequiredArgsConstructor](https://ath3nd.wordpress.com/2018/12/13/spring-lombok-or-injection-just-became-a-bit-easier-part-2-of-2/)
+
+![1](/assets/images/DI_after_copyableAnnotaion.png)
