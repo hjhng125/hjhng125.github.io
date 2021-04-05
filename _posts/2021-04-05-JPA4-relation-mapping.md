@@ -3,9 +3,10 @@ title:  "JPA - 관계 Mapping"
 excerpt: "JPA 관계 Mapping에 대하여 공부한 내용을 기술합니다."
 
 categories:
-  - Spring
+  - 스프링-데이터-jpa
 tags:
   - JPA
+  - Spring
 last_modified_at: 2021-04-05
 ---
 
@@ -143,3 +144,6 @@ public class Study {
   ```
   * account에의 관계 설정은 필수는 아니지만 객체 지향적 관점에서 보았을 때 설정해주는게 맞다.
   * 삭제의 경우에도 양쪽 모두 관계를 끊어준다.
+
+
+  참고: [https://www.inflearn.com/course/스프링-데이터-jpa](https://www.inflearn.com/course/스프링-데이터-jpa)
