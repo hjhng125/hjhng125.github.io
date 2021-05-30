@@ -42,6 +42,12 @@ spring-boot-starter-data-jpa 의존성이 추가되면 디비 커넥션 풀 설�
 * 컨테이너가 관리하는 EntityManager (프록시) 빈 설정
 * PlatformTransactionManager 빈 설정
 
+### jpa sql 확인방법
+* spring.jpa.show-sql=true
+
+### sql format
+* spring.jpa.properties.hibernate.format_sql=true
+
 ### @PersistenceContext
 * Jpa의 이 어노테이션을 사용하여 EntityManager 빈을 주입받을 수 있음.
 * EntityManager는 Jpa의 핵심 클래스
