@@ -1,5 +1,5 @@
 ---
-title:  "JPA - 초기 설정"
+title:  "JPA1 - 초기 설정"
 excerpt: "JPA 초기 설정한 것에 대하여 기술합니다."
 
 categories:
@@ -36,31 +36,6 @@ spring-boot-starter-data-jpa 의존성이 추가되면 디비 커넥션 풀 설�
 * Spring JDBC는 datasource 초기화 특성을 갖고 있다.
 * Spring Boot는 기본적으로 classpath의 루트에 `schema.sql`, `data.sql` 파일이 존재한다면, 어플리케이션 구동 시 자동으로 실행한다.
 * 또한 `schema-${platform}.sql`, `data-${platform}.sql` 파일이 존재한다면, 어플리케이션 구동 시 자동으로 데이터베이스 플랫폼에 맞춘 스크립트를 실행하며, `platform` 값은 `spring.datasource.platform` 값을 따른다.
-
-### Entity 생성
-* @Entity: 
-  1. Relation과 맵핑할 도메인 선언 
-  2. Entity의 이름은 보통 클래스 이름과 같게 하지만 값을 변경하면 Hibernate 내부에선 Entity의 이름이 변경된다.
-  3. 즉 Jpa 안에서, 객체의 세상에서의 이름이 변경된 것이다.
-* @Table:
-  1. @Table의 Default는 Entity의 name과 같다. relation 세상에서의 이름
-  2. Entity의 name을 지정하지 않으면 기본적으로 클래스 이름을 사용하기 때문에 클래스의 이름이 곧 Table의 이름이 된다. 이러면 생략 가능
-* @Id: 
-  1. DB 주키에 맵핑
-  2. primary key mapping 자바의 primitive, wrapper 타입과 String, Date, BigDecimal, BigInteger 타입 가능
-* @GeneratedValue: 
-  * 값 자동 생성. 
-  * Default는 DB에 따라 생성 전략이 다르다.(GenerationType.AUTO).
-  * `IDENTITY`: 기본 키 생성을 DB에 위임. db의 auto_increment 동작이 수행됨.
-  * `TABLE`: 키 생성 테이블을 사용. 키 생성 전용 테이블을 만들고, 이름과 값으로 사용할 컬럼을 만들어 DB 시퀀스처럼 동작하게 하는 전략
-  * `SEQUENCE`: 
-    1. DB 시퀀스를 사용해 기본 키 할당. DB Sequence object 사용.
-    2. db 시퀀스는 유일한 값을 순서대로 생성하는 db object
-    3. @SequenceGenerator에 sequenceName 속성을 추가해야 한다.
-  * `AUTO`: 데이터베이스 벤더에 의존하지 않고, 벤더에 따라 타입을 지정 ex) oracle은 SEQUENCE.
-* @Column: 
-  1. relation의 컬럼과 매핑
-  2. 생략할 경우 Entity의 property의 이름으로 맵핑함.
 
 
 ### 자동 설정 : HibernateJpaAutoConfiguration

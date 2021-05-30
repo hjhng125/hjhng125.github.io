@@ -1,5 +1,5 @@
 ---
-title:  "JPA - 관계 Mapping"
+title:  "JPA4 - 관계 Mapping"
 excerpt: "JPA 관계 Mapping에 대하여 공부한 내용을 기술합니다."
 
 categories:
