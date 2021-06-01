@@ -7,15 +7,17 @@ categories:
 tags:
   - JPA
   - Spring
-last_modified_at: 2021-04-05
+last_modified_at: 2021-06-02
 ---
 
 # Cascade
+  * OneToMany, ManyToOne 어노테이션에서 설정 가능
   * 관계가 매핑되어 있는 엔터티에 엔터티의 상태 변화를 전파시키는 옵션
   * default는 {} 이다.
   * 상태란?
     1. Transient
       - JPA가 모르는 상태
+      - 계속 사용하지 않게되면 결국 GC의 대상이 될 것이다.
     2. Persistent
       - JPA가 관리중인 상태 (1차 캐시, Dirty Checking, Write Behind)
       - 영속성 컨텍스트 내부에는 엔터티를 보관하는 장소가 있는데 이를 1차 캐시라 한다.
