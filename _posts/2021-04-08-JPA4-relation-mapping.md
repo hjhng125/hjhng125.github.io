@@ -46,7 +46,8 @@ public class Study {
 
   private String name;
 
-  @ManyToOne
+  @ManyToOne // 현재 reference를 보면 Account는 Collection이 아니니까 ManyToOne이 맞음.
+             // Collection이라면 OneToMany다.
   private Account account;
 
 }
@@ -137,7 +138,7 @@ public class Study {
   account.getStudies().add(study);
   ```
 
-  * 따라서 관계의 주인인 Study에 관계를 설정해야한다. 
+  * 따라서 관계의 주인인 Study에 관계를 설정해야한다. (FK를 주인인 Study가 갖고 있기 때문)
 
   ```
   study.setAccount(account);
