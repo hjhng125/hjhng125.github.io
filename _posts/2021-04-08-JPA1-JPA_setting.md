@@ -43,10 +43,15 @@ spring-boot-starter-data-jpa 의존성이 추가되면 디비 커넥션 풀 설�
 * PlatformTransactionManager 빈 설정
 
 ### jpa sql 확인방법
+* 아래 두 옵션 중 선택
 * spring.jpa.show-sql=true
+* logging.level.org.hibernate.SQL=debug
 
 ### sql format
 * spring.jpa.properties.hibernate.format_sql=true
+
+### sql의 실질적 value 확인방법
+* logging.level.org.hibernate.type.descriptor.sql=trace
 
 ### @PersistenceContext
 * Jpa의 이 어노테이션을 사용하여 EntityManager 빈을 주입받을 수 있음.
