@@ -6,7 +6,7 @@ categories:
 tags:
   - JPA
   - Spring
-last_modified_at: 2021-06-10
+last_modified_at: 2021-06-11
 ---
 
 ### 스프링 데이터 저장소의 쿼리 만드는 방법
@@ -30,7 +30,7 @@ last_modified_at: 2021-06-10
 * 프로퍼티 표현식: Person.Address.ZipCode => find(Person)ByAddress_ZipCode(...)
 * 조건식: IgnoreCase, Between, LessThan, GreaterThan, Like, Contains, ...
 * 정렬 조건: OrderBy{프로퍼티}Asc/Desc
-* 리턴 타입: E, Optional<E>, List<E>, Page<E>, Slice<E>, Stream<E>
+* 리턴 타입: `E`, `Optional<E>`, `List<E>`, `Page<E>`, `Slice<E>`, `Stream<E>`
 * 매개변수: Pageable, Sort
 
 ### 쿼리 찾는 방법
