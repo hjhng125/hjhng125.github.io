@@ -14,7 +14,8 @@ JpaRepository에 정의된 메소드를 전부 가져오는 것이 아닌 사용
 ![1](/assets/images/RepositoryDefinition.png)
 
 * 메서드의 기능을 Spring Data Jpa가 구현할 수 있는 것이라면 구현하여 제공해준다.
-* 아래의 메서드는 Jpa가 구현하여 제공해준다.
+* RepositoryDefinition 어노테이션을 통해 domainClass를 위와 같이 정의
+* 아래의 메서드는 spring data가 구현하여 제공해준다.
 
 ![1](/assets/images/RepositoryDefinitionMethod.png)
 

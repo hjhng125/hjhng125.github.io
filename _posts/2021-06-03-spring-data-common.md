@@ -15,7 +15,7 @@ spring data는 하나의 프로젝트가 아니고 여러 SQL & NOSQL 저장소 
 * spring data KeyValue
 * spring data MongoDB
 * spring data Redis 
-* etc
+* etc..
 
 spring data common은 각 저장소를 지원하는 프로젝트의 공통 기능을 제공한다.
 리파지토리를 생성해서 빈으로 등록하는 방법, 쿼리 메소드를 만드는 기본 메커니즘이 들어있다.

@@ -6,14 +6,14 @@ categories:
 tags:
   - JPA
   - Spring
-last_modified_at: 2021-06-05
+last_modified_at: 2021-06-10
 ---
 
 ### 스프링 데이터 저장소의 쿼리 만드는 방법
 * 메소드의 이름을 분석하여 쿼리를 생성(CREATE)
 ![1](/assets/images/create.png)
 * 미리 정의해 둔 쿼리 찾아 사용(USE_DECLARED_QUERY)
-  * JPA의 구현체마다 구현이나 동작하는 방식이 다르지만 spring-data-jpa가 기본적으로 Hibernate를 사용하기 때문에 HQL을 기본으로 받아드림
+  * JPA의 구현체마다 구현이나 동작하는 방식이 다르지만 spring-data-jpa가 기본적으로 Hibernate를 사용하기 때문에 HQL을 기본으로 받아들임
   * sql을 사용하고 싶다면 nativeQuery옵션을 true로 줘야한다.
   * @Query, @Procedure, @NamedQuery의 우선순위를 가짐(셋 다 선언되어 있을 경우) - 이렇게 코딩할 일 없겠지만..
 ![1](/assets/images/use_declared_query.png)
@@ -38,6 +38,6 @@ last_modified_at: 2021-06-05
 * 저장소 기술에 따라 다름.
   * JPA: @Query @NamedQuery
 
-
+ 
 
 참고: [https://www.inflearn.com/course/스프링-데이터-jpa](https://www.inflearn.com/course/스프링-데이터-jpa)
