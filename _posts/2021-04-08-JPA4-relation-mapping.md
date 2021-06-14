@@ -56,7 +56,7 @@ public class Study {
 
   * Study 클래스가 Account를 참조하고 있다.
   * 기본값은 Study 테이블이 Account 테이블의 FK를 생성하게된다.
-  * 위의 관계에서의 주인은 Study이다.
+  * 위의 관계에서의 주인은 Study이다. (자손 테이블)
 
 * @OneToMany
 
