@@ -24,7 +24,63 @@ Back-end 개발을 할 경우 Spring boot, JPA, Spring data jpa를 대체로 많
 * 복잡한 쿼리도 작성할 수 있다.
 * 동적 쿼리 문제를 해결해 준다.
 
+### gradle setting
+
+~~~
+plugins {
+    id 'org.springframework.boot' version '2.5.1'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'me.hjhng125'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    implementation 'com.querydsl:querydsl-jpa'
+
+    compileOnly 'org.projectlombok:lombok'
+    runtimeOnly 'com.h2database:h2'
+
+    annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jpa"
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+def querydslDir = "$buildDir/generated/querydsl" // QClass가 저장될 빌드 아웃푹 디렉토리 경로
+
+sourceSets {
+    main.java.srcDirs += [ querydslDir ]
+}
+
+~~~
+
+* querydsl-jpa : querydsl 라이브러리
+  * spring data가 다양한 저장소를 제공하듯 querydsl 또한 JPA, JDO, Lucene, MongoDB 등 다양한 모듈을 지원한다.
+  * [http://www.querydsl.com](http://www.querydsl.com/)
+* querydsl-apt : querydsl 관련 코드(`QClass`) 생성 기능 제공
+* 
+
+
 다음 포스트부터 최신 Back-end기술의 핵심인 Querydsl을 학습하며 어떤 기능이 있는지 알아볼 것이다.
  
 
-참고: [https://www.inflearn.com/course/Querydsl-%EC%8B%A4%EC%A0%84/dashboard](https://www.inflearn.com/course/Querydsl-%EC%8B%A4%EC%A0%84/dashboard)
+참고: [https://www.inflearn.com/course/Querydsl-실전/dashboard](https://www.inflearn.com/course/Querydsl-%EC%8B%A4%EC%A0%84/dashboard)
