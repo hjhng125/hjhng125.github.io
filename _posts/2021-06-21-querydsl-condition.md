@@ -1,0 +1,36 @@
+---
+title:  "querydsl 검색 조건 쿼리"
+
+categories:
+  - querydsl
+tags:
+  - querydsl
+  - Spring boot
+last_modified_at: 2021-06-21
+---
+
+## 기본 검색 쿼리
+  * 검색 조건은 .and()와 .or()를 메서드 체인으로 연결할 수 있다.
+  * select(entity).from(entity)은 selectFrom()으로 합칠 수 있다.
+  * JPQL이 제공하는 모든 검색 조건을 제공한다. 
+    * eq() : equals(==)
+    * ne() : not equals(!=)
+    * eq().not() : not equals(!=)
+    * isNotNull()
+    * in()
+    * notIn() 
+    * between(from, to) : from <= x <= to
+    * goe(a) : greater or equals than a
+    * gt(a) : greater than a
+    * loe(a) : lower or equals than a
+    * lt(a) : lower than a
+    * like(a)
+    * contains(a) : like '%a%'
+    * startsWith(a) : like '%a'
+
+## AND 조건을 파라미터로 처리
+  * where()에 파라미터로 검색초건을 추가하면 AND 조건이 추가됨
+  * 이러한 경우 null은 무시되어 메서드 추출 방식을 사용하여 동적 쿼리를 깔끔하게 만들 수 있음
+<hr>
+
+참고: [https://www.inflearn.com/course/Querydsl-실전/dashboard](https://www.inflearn.com/course/Querydsl-%EC%8B%A4%EC%A0%84/dashboard)
