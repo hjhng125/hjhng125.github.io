@@ -1,5 +1,5 @@
 ---
-title:  "querydsl 결과 조회"
+title:  "querydsl 정렬"
 
 categories:
   - querydsl
