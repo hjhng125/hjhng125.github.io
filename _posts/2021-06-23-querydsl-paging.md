@@ -25,4 +25,4 @@ last_modified_at: 2021-06-23
 
 <hr>
 
-참고: [https://www.inflearn.com/course/Querydsl-실전/dashboard](https://www.inflearn.com/course/Querydsl-%EC%8B%A4%EC%A0%84/dashboard)
+참고: [실전! Querydsl - 페이징](https://www.inflearn.com/course/Querydsl-%EC%8B%A4%EC%A0%84/lecture/30127?tab=curriculum)

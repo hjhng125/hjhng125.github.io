@@ -89,4 +89,6 @@ sourceSets {
 
 <hr>
 
-참고: [https://www.inflearn.com/course/Querydsl-실전/dashboard](https://www.inflearn.com/course/Querydsl-%EC%8B%A4%EC%A0%84/dashboard)
+참고: [실전! Querydsl - 프로젝트 환경설정](https://www.inflearn.com/course/Querydsl-%EC%8B%A4%EC%A0%84/lecture/30114)
+참고: [실전! Querydsl - Querydsl 설정 과 검증](https://www.inflearn.com/course/Querydsl-%EC%8B%A4%EC%A0%84/lecture/30115?tab=curriculum)
+참고: [실전! Querydsl - 라이브러리 살펴보기](https://www.inflearn.com/course/Querydsl-%EC%8B%A4%EC%A0%84/lecture/30116?tab=curriculum)
