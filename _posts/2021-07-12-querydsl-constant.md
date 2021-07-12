@@ -6,7 +6,7 @@ categories:
 tags:
   - querydsl
   - Spring boot
-last_modified_at: 2021-07-10
+last_modified_at: 2021-07-12
 ---
 
 ## 상수 사용
