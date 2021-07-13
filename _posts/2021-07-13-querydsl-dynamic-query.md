@@ -37,6 +37,19 @@ public class MemberTeamDTO {
 }
 ~~~
 
+## 조회 조건 객체
+~~~
+@Getter
+@Setter
+public class MemberSearchCondition {
+
+    private String username;
+    private String teamName;
+    private Integer ageGoe;
+    private Integer ageLoe;
+}
+~~~
+
 ## BooleanBuilder
 * 특정 조건이 필수여야 한다면 BooleanBuilder 생성 시 인자로 조건을 넣어주어야 한다.
 
