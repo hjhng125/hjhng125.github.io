@@ -75,6 +75,9 @@ Spring Data JPA는 Querydsl에 몇가지 간편한 기능을 제공한다.<br>
 <hr>
 
 참고: [실전! Querydsl - 인터페이스 지원 - QuerydslPredicateExecutor](https://www.inflearn.com/course/Querydsl-%EC%8B%A4%EC%A0%84/lecture/30155?tab=note)
+
 참고: [실전! Querydsl - Querydsl Web 지원](https://www.inflearn.com/course/Querydsl-%EC%8B%A4%EC%A0%84/lecture/30156?tab=note&mm=null)
+
 참고: [실전! Querydsl - 리포지토리 지원 - QuerydslRepositorySupport](https://www.inflearn.com/course/Querydsl-%EC%8B%A4%EC%A0%84/lecture/30157?tab=note&mm=null)
+
 참고: [실전! Querydsl - Querydsl 지원 클래스 직접 만들기](https://www.inflearn.com/course/Querydsl-%EC%8B%A4%EC%A0%84/lecture/30158?tab=note&mm=null)
