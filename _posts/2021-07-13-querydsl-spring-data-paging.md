@@ -238,7 +238,7 @@ class MemberRepositoryTest {
 ## 스프링 데이터 Sort
 * Spring Data가 제공하는 Pageable의 Sort는 querydsl에서 사용하기 위해서 OrderSpecifier를 사용해야한다.
 * 하지만 OrderSpecifier는 조건이 복잡해지거나, join을 해야하는 경우 제대로 동작하지 않기에 실무에서 사용하기 어렵다.
-* 위의 케이스에서 Sort를 정상 작동하게 하는 방법은 다음 포스트에서 다룰 예정이다.
+* 복잡한 실무 환경에서도 Sort를 정상 작동하게 하는 방법은 다음 포스트에서 다룰 예정이다.
 
 <hr>
 
