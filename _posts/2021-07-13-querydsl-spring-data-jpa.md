@@ -27,7 +27,7 @@ public interface MemberRepository extends JpaRepository<Member, Long> {
     * 인터페이스를 자동으로 빈으로 등록해준다.
 * 하지만 동적쿼리는 querydsl을 사용해야만 하기 때문에 Spring Data JPA와 querydsl을 함께 사용하는 방법을 알아볼 것이다.
 
-## 사용자 정의 리포지토리
+## querydsl과 Spring Data JPA 함께 사용하는 방법
 * 복잡한 구현이나 커스텀한 구현이 필요한 경우 사용
 * querydsl을 쓰려면 결국 구현 코드를 만들어야 하는데, Spring Data JPA는 인터페이스로 동작하기 때문에 원하는 구현 코드를 넣기 위해서 조금 복잡한 방법으로 사용자 정의 레파지토리를 선언해야 한다.
     1. 사용자 정의 인터페이스 정의
