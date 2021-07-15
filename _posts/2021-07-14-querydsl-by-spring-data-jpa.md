@@ -14,7 +14,6 @@ last_modified_at: 2021-07-15
 아쉽게도 Spring Data Jpa가 지원하는 방법은 여러 제약사항으로 인해 복잡한 실무환경에서의 활용은 쉽지 않다.
 
 어떤 부분이 실무에 사용하기 어려운지 알아보고 추가로 이 부분을 개선하는 방법을 기록할 것이다.
-추가로 개선하는 과정 속에서 지난 포스트에서 마지막에 간략히 다루었던 Sort를 querydsl에서 사용할 수 있도록 하는 방법을 소개할 것이다.
 
 ## 인터페이스 지원 - QuerydslPredicateExecutor
 * [공식 문서](https://docs.spring.io/spring-data/jpa/docs/2.2.3.RELEASE/reference/html/#core.extensions.querydsl)
