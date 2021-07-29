@@ -28,6 +28,10 @@ last_modified_at: 2021-05-30
   * Default는 DB에 따라 생성 전략이 다르다.(GenerationType.AUTO).
   * mysql은 `IDENTITY`, postgresql은 `SEQUENCE`
   * `IDENTITY`: 기본 키 생성을 DB에 위임. db의 auto_increment 동작이 수행됨.
+    * 해당 값으로 선언한 경우, 트랜잭션 내의 쓰기 지연 기능을 사용할 수 없다.
+    * 그 이유는 Persistence Context가 관리하는 상태로 만들려면 식별자가 필요하기 때문이며,
+    * 이 전략은 DB에 키 생성을 위임했으므로 엔터티를 테이블에 저장해야 식별자를 구할 수 있다.
+    * 따라서 EntityManager의 persist()를 호출하면 바로 insert 쿼리가 DB에 전달된다.
   * `TABLE`: 키 생성 테이블을 사용. 키 생성 전용 테이블을 만들고, 이름과 값으로 사용할 컬럼을 만들어 DB 시퀀스처럼 동작하게 하는 전략
   * `SEQUENCE`: 
     1. DB 시퀀스를 사용해 기본 키 할당. DB Sequence object 사용.
