@@ -36,7 +36,7 @@ last_modified_at: 2020-07-18
  ![1](/assets/images/spring-boot-test.png)
 
 - spring-boot-starter-test 에는 다음 라이브러리들이 포함되어 있다.
-  * JUnit5
+  * JUnit
   * Spring test 및 Spring boot test
   * AssertJ
   * Hamcrest
@@ -55,6 +55,7 @@ last_modified_at: 2020-07-18
 
 * 단위 테스트는 다른 `의존성`이 전혀 없는 상황에서 실행할 수 있는 테스트를 의미한다.
 * Spring을 사용하지 않기때문에 스프링에서 제공하는 `@Autowired`는 사용할 수 없다. 따라서 `field injection`이 아닌 `constructor injection`을 사용한다.
+  * 뒤에 나오는 SpringRunner를 통해 junit을 확장하여 사용가능
 * 유닛 테스트를 지원하는 어노테이션으로는 @WebMvcTest, @DataJpaTest, @RestClientTest, @JsonTest 등이 있다.
 
 * `@Ignore` 어노테이션은 해당 메서드의 테스트를 무시하고 지나가게 해준다.
@@ -74,7 +75,7 @@ last_modified_at: 2020-07-18
   * Junit5부터 SpringExtension으로 대체 되었다.
   
 - 테스트 코드 작성
-  * 테스트 클래스는 반드시 `public`으로 선언한다. - `JUnint`에서 접근 하기 위해
+  * 테스트 클래스와 메서드 반드시 `public`으로 선언한다. - `JUnint`에서 접근 하기 위해
       * Junit5부터 public을 선언하지 않아도된다.
   * 클래스명은 관례상 테스트할 `클래스명 + Test`로 한다.
   * @Test를 선언한 테스트 메서드는 JUnit이 알아서 실행할 수 있게 한다.
