@@ -64,3 +64,7 @@ InnoDB의 READ_COMMITTED 격리 수준 또한 SNAPSHOT을 사용하나, 매 조�
 ### SERIALIZABLE
 해당 격리 수준은 동시 처리 성능을 포기하고 완벽한 읽기 일관성을 보장하는 격리 수준입니다.<br>
 하나의 트랜잭션이 완료된 이후에 다른 트랜잭션이 실행되는 것처럼 지원합니다.
+
+### 참고
+[MySQL 공식문서](https://dev.mysql.com/doc/refman/8.0/en/innodb-transaction-isolation-levels.html#isolevel_repeatable-read)<br>
+[https://nesoy.github.io/articles/2019-05/Database-Transaction-isolation](https://nesoy.github.io/articles/2019-05/Database-Transaction-isolation)
