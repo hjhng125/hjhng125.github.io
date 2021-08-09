@@ -35,7 +35,7 @@ public class AppConfig {
 * 컴포넌트 스캐닝 - 직접 만든 객체에 사용
   * @Component, @Controller, @Service, @Repository 어노테이션을 붙인다.
 
-위 처리를 하게되면 ApplicationContext에 빈이 등록되어 다른 빈에 주입되거나, getBean() 메서드를 통해 가져올 수 있습니다.
+위 처리를 하게되면 ServletContext 혹은 ApplicationContext에 빈이 등록되어 다른 빈에 주입되거나, getBean() 메서드를 통해 가져올 수 있습니다.
 
 ## Bean Scope
 스프링은 이 빈에 대해 6가지 Scope를 제공합니다.
