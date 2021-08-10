@@ -3,7 +3,7 @@ title:  "JPA3 - Value 타입 맵핑"
 excerpt: "JPA Value 타입 맵핑에 대하여 기술합니다."
 
 categories:
-  - 스프링-데이터-jpa
+  - spring-data-jpa
 tags:
   - JPA
   - Spring

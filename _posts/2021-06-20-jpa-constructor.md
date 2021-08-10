@@ -3,7 +3,7 @@ title:  "JPA와 생성자"
 excerpt: "JPA와 생성자가 필요한 이유"
 
 categories:
-  - JPA
+  - jpa
 tags:
   - Spring
 

@@ -3,7 +3,7 @@ title:  "관계형 DB와 Java"
 excerpt: "관계형 DB와 Java에 대하여 공부한 내용을 기술합니다."
 
 categories:
-  - 스프링-데이터-jpa
+  - spring-data-jpa
 
 last_modified_at: 2021-05-16
 ---

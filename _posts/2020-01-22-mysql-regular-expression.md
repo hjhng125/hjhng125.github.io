@@ -3,7 +3,7 @@ title:  "MySQL Regular Expression"
 excerpt: "MySQL 정규표현식을 대하여 설명합니다."
 
 categories:
-  - MySQL
+  - mysql
 tags:
   - MySQL
   - Regular Expression

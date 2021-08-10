@@ -3,7 +3,7 @@ title:  "템플릿 메소드 페턴"
 excerpt: "템플릿 메소드 패턴이란?"
 
 categories:
-  - Clean Code
+  - design-pattern
 
 last_modified_at: 2021-05-01
 ---

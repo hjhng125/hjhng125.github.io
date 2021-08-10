@@ -2,7 +2,7 @@
 title:  "JPA key 생성전략 변경 사항"
 
 categories:
-  - JPA
+  - jpa
 tags:
   - Spring
 

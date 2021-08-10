@@ -3,7 +3,7 @@ title:  "[Javascript] export, import"
 excerpt: "export 와 import 에 관하여 공부한 것을 기록합니다."
 
 categories:
-  - Javascript
+  - javascript
 tags:
   - Javascript
   - export

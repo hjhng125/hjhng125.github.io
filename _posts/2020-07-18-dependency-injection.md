@@ -3,7 +3,7 @@ title:  "Dependency Injection"
 excerpt: "Dependency Injection에 대하여 공부한 내용을 기술합니다."
 
 categories:
-  - Spring
+  - spring
 tags:
   - Dependency
 

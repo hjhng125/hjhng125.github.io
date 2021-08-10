@@ -3,7 +3,7 @@ title:  "클래스 메서드(static method)와 인스턴스 메서드"
 excerpt: "클래스 메서드(static method)와 인스턴스 메서드에 대하여 공부한 내용을 기술합니다."
 
 categories:
-  - Java
+  - java
 tags:
   - static
   - OOP

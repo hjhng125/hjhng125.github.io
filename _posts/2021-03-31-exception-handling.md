@@ -3,7 +3,7 @@ title:  "예외 처리"
 excerpt: "예외 처리에 관하여"
 
 categories:
-  - Spring
+  - java
 tags:
   - Exception Handle
 

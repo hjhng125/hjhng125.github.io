@@ -2,7 +2,7 @@
 title:  "JPA 컬렉션 패치 조인의 문제점"
 
 categories:
-  - JPA
+  - jpa
 tags:
   - Spring
 last_modified_at: 2021-07-12

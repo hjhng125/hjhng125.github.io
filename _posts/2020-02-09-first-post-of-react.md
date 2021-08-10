@@ -3,7 +3,7 @@ title:  "[React] React란 무엇인가"
 excerpt: "First story of React."
 
 categories:
-- React
+- react
 tags:
 - React
 

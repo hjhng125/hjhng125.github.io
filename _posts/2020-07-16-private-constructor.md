@@ -3,7 +3,7 @@ title:  "Private Constructor"
 excerpt: "Private Constructor에 대하여 공부한 내용을 기술합니다."
 
 categories:
-  - Java
+  - java
 tags:
   - access modifier
 last_modified_at: 2020-07-16

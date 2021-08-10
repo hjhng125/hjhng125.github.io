@@ -3,7 +3,7 @@ title:  "클래스 멤버와 인스턴스 멤버간의 참조와 호출"
 excerpt: "클래스 멤버와 인스턴스 멤버간의 참조와 호출에 대하여 공부한 내용을 기술합니다."
 
 categories:
-  - Java
+  - java
 tags:
   - class member
   - instance member

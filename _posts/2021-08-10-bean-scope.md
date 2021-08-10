@@ -3,7 +3,7 @@ title:  "Spring Bean Scope"
 excerpt: "Spring Bean Scope에 대하여 공부한 내용을 기술합니다."
 
 categories:
-  - Spring
+  - spring
 tags:
   - Bean
 

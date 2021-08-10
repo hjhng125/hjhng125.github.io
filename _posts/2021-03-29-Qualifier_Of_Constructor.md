@@ -3,7 +3,7 @@ title:  "@Qualifier and @RequiredArgsConstructor"
 excerpt: "Qualifier와 @RequiredArgsConstructor"
 
 categories:
-  - Spring
+  - spring
 tags:
   - DI
 

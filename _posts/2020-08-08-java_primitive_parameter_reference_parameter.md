@@ -3,7 +3,7 @@ title:  "기본형 매개변수와 참조형 매개변수"
 excerpt: "기본형 매개변수와 참조형 매개변수에 대하여 공부한 내용을 기술합니다."
 
 categories:
-  - Java
+  - java
 tags:
   - Parameter
 

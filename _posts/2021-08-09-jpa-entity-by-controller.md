@@ -2,7 +2,7 @@
 title:  "Controller에서 JPA Entity를 반환하는 경우"
 
 categories:
-  - JPA
+  - jpa
 tags:
   - Spring
 comments: true

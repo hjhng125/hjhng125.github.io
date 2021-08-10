@@ -2,7 +2,7 @@
 title:  "Spring Data Common - Null 처리"
 
 categories:
-  - 스프링-데이터-jpa
+  - spring-data-jpa
 tags:
   - JPA
   - Spring

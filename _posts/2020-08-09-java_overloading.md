@@ -3,7 +3,7 @@ title:  "오버로딩(Overloading)"
 excerpt: "오버로딩(Overloading)에 대하여 공부한 내용을 기술합니다."
 
 categories:
-  - Java
+  - java
 tags:
   - Overloading
   - OOP

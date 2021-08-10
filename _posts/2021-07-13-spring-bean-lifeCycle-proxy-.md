@@ -3,7 +3,7 @@ title:  "Spring proxy 호출 위치와 @Transactional"
 excerpt: "Spring proxy 호출 위치와 @Transactional"
 
 categories:
-  - Spring
+  - spring
 tags:
   - proxy
   - Transactional

@@ -3,7 +3,7 @@ title:  "Retention Policy"
 excerpt: "Retention Policy에 대하여 공부한 내용을 기술합니다."
 
 categories:
-  - Spring
+  - spring
 tags:
   - annotation
 last_modified_at: 2021-04-04

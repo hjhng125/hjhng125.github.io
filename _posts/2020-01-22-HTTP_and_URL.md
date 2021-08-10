@@ -3,7 +3,7 @@ title:  "HTTP와 URL"
 excerpt: "HTTP와 URL에 대하여"
 
 categories:
-  - HTTP
+  - http
 tags:
   - HTTP
   - URL

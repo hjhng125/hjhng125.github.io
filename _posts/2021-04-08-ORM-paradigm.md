@@ -3,7 +3,7 @@ title:  "ORM 패러다임 불일치"
 excerpt: "ORM 패러다임 불일치에 대하여"
 
 categories:
-  - 스프링-데이터-jpa
+  - spring-data-jpa
 
 last_modified_at: 2021-05-16
 ---

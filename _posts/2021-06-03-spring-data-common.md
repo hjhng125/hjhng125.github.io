@@ -2,7 +2,7 @@
 title:  "Spring Data Common이란"
 
 categories:
-  - 스프링-데이터-jpa
+  - spring-data-jpa
 tags:
   - JPA
   - Spring
