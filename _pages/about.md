@@ -1,13 +1,13 @@
 ---
-title: "이 블로그 설명서"
+title: About Me
 permalink: /about/
-layout: single
+toc: true
+toc_sticky: true
+
 ---
 
 <hr>
 <img src="/assets/images/profile.jpeg" width="100">
-
-## About Me
 
 <p>안녕하세요 2년차 백엔드 개발자 홍진형입니다. </p>
 <p>Python을 사용하여 한국과 대만 학교의 홈페이지를 연동하는 시스템을 구축한 후 현재 Java & Spring 개발자로 전향하여 정산 시스템을 개발했습니다.</p>
