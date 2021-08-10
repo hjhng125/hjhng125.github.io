@@ -1,5 +1,5 @@
 ---
-title:  "JPA Controller에서 Entity를 반환하는 경우"
+title:  "Controller에서 JPA Entity를 반환하는 경우"
 
 categories:
   - JPA
