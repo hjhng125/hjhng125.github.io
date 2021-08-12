@@ -282,4 +282,5 @@ defaults:
       share: true
       related: false
 
+# Excludes
 category_list: [ querydsl, spring, spring-data-jpa, java, jpa, clean-code, mysql, http, javascript, react, spring-based-rest-api ]

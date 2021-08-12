@@ -1,18 +1,18 @@
 ---
-layout: default
+layout: archive
 ---
-<ul class="posts-list">
+
+{% assign cate = page.category | default: page.title %}
+  {% for post in site.categories[ cate ] %}
+    <div class="list__item">
+      <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+        <h2 class="archive__item-title" itemprop="headline">
+          <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
+        </h2>
+        <p class="page__meta"><time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time></p>
+        {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+      </article>
+    </div>
+{% endfor %}
   
-  {% assign category = page.category | default: page.title %}
-  {% for post in site.categories[category] %}
-    <li>
-      <h3>
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
-        </a>
-        <small>{{ post.date | date_to_string }}</small>
-      </h3>
-    </li>
-  {% endfor %}
-  
-</ul>
+{% include paginator.html %}

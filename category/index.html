@@ -1,0 +1,13 @@
+---
+layout: archive
+author_profile: true
+permalink: '/category'
+title: 'Category List'
+---
+
+
+{% for list in site.category_list %}
+    <h2 class="archive__subtitle">
+        <a href="/category/{{ list }}">{{ list }}</a>
+    </h2>
+{% endfor %}
