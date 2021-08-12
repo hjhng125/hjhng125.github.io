@@ -68,3 +68,7 @@ InnoDB의 READ_COMMITTED 격리 수준 또한 SNAPSHOT을 사용하나, 매 조�
 ### 참고
 [MySQL 공식문서](https://dev.mysql.com/doc/refman/8.0/en/innodb-transaction-isolation-levels.html#isolevel_repeatable-read)<br>
 [https://nesoy.github.io/articles/2019-05/Database-Transaction-isolation](https://nesoy.github.io/articles/2019-05/Database-Transaction-isolation)
+
+[Spring 공식문서](https://docs.spring.io/spring-framework/docs/current/reference/html/data-access.html#transaction)
+
+[Baeldung](https://www.baeldung.com/spring-transactional-propagation-isolation)
