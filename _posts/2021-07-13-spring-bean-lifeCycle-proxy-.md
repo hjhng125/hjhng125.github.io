@@ -24,3 +24,7 @@ last_modified_at: 2021-07-13
   * 자기 자신의 빈을 주입받아 target 빈이 아닌 proxy를 통해 호출되는 효과를 만든다.
 * 메서드에서 Transaction이 필요한 코드를 분리하여 **외부에서 호출**하도록 하는 것이다.
   
+### 참고
+[Spring 공식 문서](https://docs.spring.io/spring-framework/docs/current/reference/html/data-access.html#transaction)
+
+[Baeldung](https://www.baeldung.com/spring-transactional-propagation-isolation)
