@@ -110,8 +110,12 @@ prototype scope는 스프링이 빈의 전체 생명주기를 관리하지 않�
 스프링은 singleton 빈을 한 번만 생성하고, 이 빈에 prototype 빈을 주입하려할 때 한번만 생성할 것입니다.
 그렇기 때문에 필요할 때마다 prototype 빈의 새 인스턴스를 제공할 수 없게 됩니다.
 
-이런 경우 method injection을 통해 해결할 수 있습니다. 
-method injection 또한 다른 포스트에서 다루겠습니다.
+이런 경우 [Dependency Lookup]([DL, Dependency Lookup](/spring/dependency-lookup/))을 통해 해결할 수 있습니다. 
+또한 `@Scope.proxyMode`를 통해 Prototype Bean을 프록시로 감싸주어 빈에 접근하려 할때 새로운 인스턴스를 생성하는 방법도 있습니다.
+~~~
+@Scope(scopeName=ConfigurableBeanFactory.SCOPE_PROTOTYPE, proxyMode = ScopedProxyMode.TARGET_CLASS)
+~~~
+
 
 ### Web Aware Scopes
 이 Scopes에 포함되는 것들은 일반 스프링 애플리케이션에서는 사용할 수 없으며, 스프링 MVC 애플리케이션에서만 사용가능합니다.(Web Aware)<br>
