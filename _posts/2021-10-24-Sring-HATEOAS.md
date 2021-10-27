@@ -1,0 +1,79 @@
+---
+title:  "Spring HATEOAS"
+excerpt: "Spring HATEOAS에 대하여"
+
+categories:
+  - spring-based-rest-api
+tags:
+  - REST API
+  - 
+last_modified_at: 2021-10-24T05:01:44.574Z
+---
+
+HATEOAS란 REST 아키텍쳐의 컴프넌트 중 하나로 하이퍼미디어를 사용하여 애플리케이션 서버 간 정보를 상태에 따라 동적으로 주고 받기 위한 방법을 의미합니다.
+
+간단히 계좌의 입출금이 가능한 뱅킹 어플리케이션이 있다고 가정해보겠습니다.
+아래는 계좌를 생성하는 API 예시입니다.
+```
+POST /accounts HTTP/1.1
+```
+
+```
+HTTP/1.1 200 OK
+{
+  "accounts" : {
+     "account_number": 123-4567-890,
+     "balance": 0,
+     "links": {
+        "deposits": "/accounts/123-4567-890/deposits"
+     }
+  }
+}
+```
+
+계과를 생성하는 API의 응답으로 입금 API의 링크를 전달 받았습니다.<br/>
+현재 계좌의 상태는 초기 생성됨에 따라 잔액이 0원이라는 것을 알 수 있고, `links`를 통해 입금만이 가능하다는 사실도 알 수 있습니다.
+
+다음으로 잔액이 남아있는 계좌를 조회하는 API 예시입니다.
+```
+GET /accounts/123-4567-891 HTTP/1.1
+```
+
+```
+HTTP/1.1 200 OK
+{
+  "accounts" : {
+     "account_number": 123-4567-890,
+     "balance": 100,
+     "links": {
+        "deposits": "/accounts/123-4567-890/deposits",
+        "withdrawals": "/accounts/12345/withdrawals",
+        "transfers": "/accounts/12345/transfers"
+     }
+  }
+}
+```
+
+현재 조회한 계좌의 잔액이 남아있기 때문에 입금 외에 출금이나, 송금이 가능함을 알 수 있습니다.
+
+이와 같이 HATEOAS는 REST API를 호출하는 클라이언트에 애플리케이션이 변화 가능한 상태를 제공하기 때문에 서버와 동적인 상호작용이 가능하게 해줍니다.  
+
+## Spring HATEOAS
+Spring HATEOAS는 스프링을 통한 API를 개발할 때 HATEOAS를 만족하기 위하여 편리한 기능을 제공합니다.
+1. link를 만드는 기능
+2. resource를 만드는 기능
+3. Client side에서 link를 찾기 위한 기능
+   * Traverson
+   * LinkDiscoverers
+
+여기서 만들어진 링크는 아래와 같은 정보를 포함합니다.
+* HREF
+* REL
+  * self
+  * profile
+  * 상태 변화 가능한 주소
+
+이번 포스트는 HATEOAS의 정의에 대해 알아보았는데요,
+다음 포스트에서 Spring 진영에서 HATEOAS를 제공하는 방법에 대해 자세히 알아보겠습니다.
+
+참고: [스프링 기반 REST API 개발 - 스프링 HATEOAS 소개](https://www.inflearn.com/course/spring_rest-api/lecture/16426?tab=curriculum)
