@@ -6,7 +6,7 @@ categories:
   - spring
 tags:
   - DI
-
+comments: true
 last_modified_at: 2021-03-29
 ---
 

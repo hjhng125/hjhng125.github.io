@@ -4,7 +4,7 @@ excerpt: "ORM 패러다임 불일치에 대하여"
 
 categories:
   - spring-data-jpa
-
+comments: true
 last_modified_at: 2021-05-16
 ---
 

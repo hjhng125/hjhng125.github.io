@@ -6,7 +6,7 @@ categories:
   - spring
 tags:
   - Bean
-
+comments: true
 
 last_modified_at: 2020-08-10
 ---

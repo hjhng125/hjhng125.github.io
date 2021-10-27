@@ -4,7 +4,7 @@ excerpt: "관계형 DB와 Java에 대하여 공부한 내용을 기술합니다.
 
 categories:
   - spring-data-jpa
-
+comments: true
 last_modified_at: 2021-05-16
 ---
 

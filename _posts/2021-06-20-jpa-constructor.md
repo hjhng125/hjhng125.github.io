@@ -6,7 +6,7 @@ categories:
   - jpa
 tags:
   - Spring
-
+comments: true
 last_modified_at: 2021-06-20
 ---
 

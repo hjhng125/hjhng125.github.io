@@ -7,6 +7,7 @@ categories:
 tags:
   - test
   - JUnit
+comments: true
 last_modified_at: 2021-03-31
 ---
 

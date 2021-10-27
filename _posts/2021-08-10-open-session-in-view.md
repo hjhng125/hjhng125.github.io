@@ -4,7 +4,7 @@ excerpt: "Open Session In View에 대하여 공부한 내용을 기술합니다.
 
 categories:
   - JPA
-
+comments: true
 last_modified_at: 2021-09-05T01:50:000-05:00
 ---
 

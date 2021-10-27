@@ -6,7 +6,7 @@ categories:
 - react
 tags:
 - React
-
+comments: true
 last_modified_at: 2020-02-09
 
 ---

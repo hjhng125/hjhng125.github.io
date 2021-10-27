@@ -7,6 +7,7 @@ categories:
 tags:
   - querydsl
   - Spring boot
+comments: true
 last_modified_at: 2021-07-13
 ---
 

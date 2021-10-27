@@ -8,7 +8,7 @@ tags:
   - class member
   - instance member
   - OOP
-
+comments: true
 last_modified_at: 2020-08-09
 ---
 

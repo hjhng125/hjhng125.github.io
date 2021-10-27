@@ -4,7 +4,7 @@ excerpt: "템플릿 메소드 패턴이란?"
 
 categories:
   - design-pattern
-
+comments: true
 last_modified_at: 2021-05-01
 ---
 
