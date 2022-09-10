@@ -8,83 +8,71 @@ comments: true
 last_modified_at: 2022-09-10T03:50:000-05:00
 ---
 
-## 조건에 따른 테스트 실행
-특정 OS 혹은 특정 환경변수에 따라 테스트를 실행하는 방법은 아래와 같다.
+## Assertion
 
 ```
 @Test
-@DisplayName("환경변수 TEST ENV가 LOCAL이면 실행 (assumeTrue)")
-void env_test() {
-    String testEnv = System.getenv("TEST_ENV");
-    System.out.println(testEnv);
-    assumeTrue("LOCAL".equalsIgnoreCase(testEnv));
-
+@DisplayName("스터디 객체 만들기")
+void create_new_study() {
     Study study = new Study(10);
-    assertThat(study.limit()).isGreaterThan(0);
+
+    assertAll(
+            () -> assertNotNull(study),
+            () -> assertEquals(DRAFT, study.status(), "스터디를 처음 만들면 상태값이 DRAFT 이다."),
+            () -> assertEquals(DRAFT, study.status(), () -> "스터디를 처음 만들면 상태값이 " + DRAFT + " 이다."), // lambda를 사용하면 문자열 연산이 실패했을때만 수행된다.
+            () -> assertTrue(study.limit() > 0, "스터디 정원은 항상 양수이다.")
+    );
+
+    System.out.println("create1");
 }
 
 @Test
-@DisplayName("환경변수 TEST ENV가 LOCAL이면 실행 (assumeThat)")
-void env_test_again() {
-    String testEnv = System.getenv("TEST_ENV");
-    System.out.println(testEnv);
-    assumingThat("LOCAL".equalsIgnoreCase(testEnv), () -> {
-        Study study = new Study(10);
-        assertThat(study.limit()).isGreaterThan(0);
+@Disabled
+void create_new_study_again() {
+    Study study = new Study(-10);
+    assertNotNull(study);
+    System.out.println("create2");
+}
+
+@Test
+void throw_exception_test() {
+    IllegalArgumentException illegalArgumentException = assertThrows(IllegalArgumentException.class, () -> new Study(-10));
+    String errorMessage = illegalArgumentException.getMessage();
+
+    assertEquals("limit은 0보다 커야한다.", errorMessage);
+}
+
+@Test
+void timeout_test() {
+    assertTimeout(Duration.ofMillis(100), () -> {
+        Thread.sleep(300); // 이 코드 블럭이 실행된 후 시간을 계산하고 비교하고자 하는 timeout 시간과 비교한다.
+        new Study(10);
     });
 }
 
 @Test
-@EnabledOnOs(OS.MAC)
-@DisplayName("MAC에서만 실행")
-void os_test() {
-    System.out.println("ON MAC");
-}
+void timeout_preemptively_test() {
+    assertTimeoutPreemptively(Duration.ofMillis(100), () -> {
+        Thread.sleep(300); // 위와 다르게 설정한 timeout 시간이 도래하면 바로 예외를 발생시키고 테스트를 종료한다.
+        new Study(10);
+    });
 
-@Test
-@DisabledOnOs(OS.MAC)
-@DisplayName("MAC이 아니어야 실행")
-void os_no_test() {
-    System.out.println("ON MAC");
-}
-
-@Test
-@EnabledOnJre(value = {JRE.JAVA_8, JRE.JAVA_9, JRE.JAVA_10, JRE.JAVA_11})
-@DisplayName("jre가 8, 9, 10, 11이면 실행")
-void jre_test() {
-    System.out.println("ON MAC");
-}
-
-@Test
-@DisabledOnJre(value = {JRE.JAVA_8, JRE.JAVA_9, JRE.JAVA_10, JRE.JAVA_11})
-@DisplayName("jre가 8, 9, 10, 11 아니면 실행")
-void jre_no_test() {
-    System.out.println("ON MAC");
-}
-
-@Test
-@EnabledIfEnvironmentVariable(named = "TEST_ENV", matches = "LOCAL")
-@DisplayName("환경변수 TEST ENV가 LOCAL이면 실행 annotation")
-void enabled_if_environment_variable() {
-    System.out.println("execute");
-}
-
-@Test
-@DisabledIfEnvironmentVariable(named = "TEST_ENV", matches = "LOCAL")
-@DisplayName("환경변수 TEST ENV가 LOCAL이면 실행 annotation")
-void disabled_if_environment_variable() {
-    System.out.println("execute");
+    // TODO ThreadLocal - 람다는 별도의 쓰레드에서 실행될 수 있기 때문에 ThreadLocal을 사용하는 코드는 원하는 결과를 얻을 수 없을 수 있다.
 }
 ```
 
-* assumeTrue - 인자값이 참인 경우 이후 검증을 수행한다.
-* assumeThat - 첫번째 인자값이 참인 경우 다음 인자인 Executable 을 수행한다.
-* @EnabledOnOs - 실행하는 OS가 인자로 전달한 OS 타입과 일치하는 경우 테스트를 실행한다.
-* @DisabledOnOs - 실행하는 OS가 인자로 전달한 OS 타입과 일치하는 경우 테스트를 실행하지 않는다.
-* @EnabledOnJre - 실행하는 자바 버전이 인자로 전달한 자바 버전과 일치하는 경우 테스트를 실행한다.
-* @DisabledOnJre - 실행하는 자바 버전이 인자로 전달한 자바 버전과 일치하는 경우 테스트를 실행하지 않는다.
-* @EnabledIfEnvironmentVariable - 인자로 전달한 환경 변수값이 실제 환경 변수와 같은 경우 테스트를 실행한다.
-* @DisabledIfEnvironmentVariable - 인자로 전달한 환경 변수값이 실제 환경 변수와 같은 경우 테스트를 실행하지 않는다.
+* assertEquals - 실제 값이 기대값과 같은지 확인
+* assertNotNull - 값이 not null 인지 확인
+* assertTrue - 값이 true 인지 확인
+* assertAll - 모든 구문 확인
+* assertThrows - 예외 발생 확인
+* assertTimeout - 특정 시간 안에 실행이 완료되는지 확인
+
+위의 메서드들은 Supplier<String> 타입의 인스턴스를 람다 형태로 제공할 수 있다.
+* 복잡한 메세지를 생성해야 하는 경우 실패한 경우에만 해당 메세지를 만들 수 있도록 지연시킨다.
+
+AssertJ, Hamcrest, Truth 등의 라이브러리를 사용할 수도 있음.
+* AssertJ, Hamcrest는 spring-boot-starter-test에 들어있음.
 
 
 ### 참고
