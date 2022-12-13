@@ -9,7 +9,7 @@ toc_sticky: true
 <hr>
 <img src="/assets/images/profile.jpeg" width="100">
 
-<p>안녕하세요 2년차 백엔드 개발자 홍진형입니다. </p>
+<p>안녕하세요 3년차 백엔드 개발자 홍진형입니다. </p>
 <p>Python을 사용하여 한국과 대만 학교의 홈페이지를 연동하는 시스템을 구축한 후 현재 Java & Spring 개발자로 전향하여 정산 시스템을 개발했습니다.</p>
 <p>어제보다 더 나은 개발자가 되고 싶은 마음가짐으로 학습하는 것을 생활화하고 있으며, 학습한 내용을 정리하고자 블로그를 운영하고 있습니다.</p>
 <p>Clean Code와 Test Code를 지향하며, 더 나은 것을 만들어내기 위한 고민을 생활화하고 있습니다.</p>
@@ -18,8 +18,21 @@ toc_sticky: true
 * Github : [https://github.com/hjhng125](https://github.com/hjhng125)
 
 ## Work Experience & Project
+### 토글랩스
+#### 2021.11 ~ 현재
+* 통합 쇼핑몰 관리 시스템 개발
+  * 쇼핑몰 주문 연동
+  * 주문 수집 프로세스 개선
+* 정산시스템 개발
+  * 신규 정산 시스템 설계
+  * 정산 시스템 Batch / API 개발
+* 레거시 서비스 리뉴얼
+  * 레거시 프로젝트 분석 
+  * 코드 컨벤션 및 아키텍쳐 정의
+  * 서비스 책임 및 역할 분리
+
 ### 여기어때 컴퍼니
-#### 2020.05 ~ 현재
+#### 2020.05 ~ 2021.11
 * 정산 시스템 개발 및 런칭
     * 정산 시스템 Batch / API 개발
     * 정산 API 개선 - 10초 이상의 구조 -> 2초 미만
@@ -44,9 +57,9 @@ toc_sticky: true
 
 ## Skills
 ### BackEnd
-* Java
-* Spring Boot, Spring Batch, Spring Data JPA, JPA, Querydsl
-* Junit4, Junit5, Mockito
+* Java, kotlin
+* Spring Boot, Spring Batch, JPA, Querydsl
+* Junit4, Junit5
 * Gradle
 * IntelliJ, Visual Studio Code
 * Git
@@ -56,9 +69,9 @@ toc_sticky: true
 * React
 
 ### DevOps
-* EC2, S3, CloudFront, Route53, CodeDeploy
+* CloudFront, CodeBuild, CodeDeploy, CodePipeline
 * MySQL
 
 ### Collaboration
-* Jira, Confluence
+* Jira, Confluence, Dooray
 * Slack
